@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JEE Study Resources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>JEE Study Resources</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#physics">Physics</a></li>
+        <li><a href="#chemistry">Chemistry</a></li>
+        <li><a href="#maths">Maths</a></li>
+      </ul>
+    </nav>
+    <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 Dark Mode</button>
+  </header>
+
+  <!-- Search Box -->
+  <div class="search-container">
+    <input type="text" id="searchInput" placeholder="Search JEE Resources..." onkeyup="searchResources()" />
+  </div>
+
+  <main>
+    <section class="subject" id="physics">
+      <h2>Physics</h2>
+      <button onclick="toggleResources('physics-resources')">Show/Hide Resources</button>
+      <div class="resources" id="physics-resources">
+        <ul>
+          <li><a href="#">HC Verma Notes PDF</a></li>
+          <li><a href="#">Physics Wallah Videos</a></li>
+          <li><a href="#">Previous Year Questions</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subject" id="chemistry">
+      <h2>Chemistry</h2>
+      <button onclick="toggleResources('chemistry-resources')">Show/Hide Resources</button>
+      <div class="resources" id="chemistry-resources">
+        <ul>
+          <li><a href="#">NCERT Solutions</a></li>
+          <li><a href="#">Organic Chemistry Notes</a></li>
+          <li><a href="#">Reaction Mechanisms Video</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="subject" id="maths">
+      <h2>Maths</h2>
+      <button onclick="toggleResources('maths-resources')">Show/Hide Resources</button>
+      <div class="resources" id="maths-resources">
+        <ul>
+          <li><a href="#">RD Sharma PDF</a></li>
+          <li><a href="#">Important Formulas</a></li>
+          <li><a href="#">Trigonometry Tricks Video</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JEE Study Portal</p>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="topBtn" title="Go to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
